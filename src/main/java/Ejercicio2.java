@@ -18,7 +18,7 @@ public class Ejercicio2 {
 
                 String sql = "Select * from products where buyPrice < 400 order by buyPrice";
 
-                ResultSet rs = statemen
+
 
 
 
@@ -27,6 +27,8 @@ public class Ejercicio2 {
                 System.out.println(e.getMessage());
             }
 
+        } catch (Exception e){
+            System.out.println(e.getMessage());
         }
     }
 }

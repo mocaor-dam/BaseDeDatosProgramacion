@@ -1,3 +1,4 @@
+import exceptions.MiEntradaSalidaException;
 import utils.MiEntradaSalida;
 
 import java.sql.*;
@@ -21,6 +22,8 @@ public class Ejercicio3 {
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
             }
+        } catch (Exception e){
+            System.out.println(e.getMessage());
         }
     }
 }
